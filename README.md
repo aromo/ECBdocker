@@ -5,23 +5,23 @@ ECB docker is just a PHP challenge testing application with docker.
 
 Clone this repository
 ```sh
-$ git clone https://github.com/tunelko/ECBdocker.git
+$ git clone https://github.com/aromo/ECBdocker
 ```
 
 Build the container:
 ```sh
-$ docker build --force-rm=true --no-cache=true --rm=true  -t tunelko/ecbdocker .
+$ docker build --force-rm=true --no-cache=true --rm=true  -t aromo/ecbdocker .
 ```
 After building, just run it:
 ```sh
-$ docker run -d -p 8443:80 tunelko/ecbdocker
+$ docker run -d -p 8443:80 aromo/ecbdocker
 ```
 
 And see if is running:
 ```sh
 $ docker ps
 CONTAINER ID        IMAGE                      COMMAND             CREATED             STATUS              PORTS                  NAMES
-688cfbc68597        tunelko/ecbdocker:latest   /run.sh             6 minutes ago       Up 6 minutes        0.0.0.0:8443->80/tcp   loving_davinci
+688cfbc68597        aromo/ecbdocker:latest   /run.sh             6 minutes ago       Up 6 minutes        0.0.0.0:8443->80/tcp   loving_davinci
 ```
 ### Start
 
